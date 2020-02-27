@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/main.js',
@@ -15,12 +15,13 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
+    new Dotenv(),
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Doctor Who',
       template: './src/index.html',
-      inject: 'body'
+      inject: 'head'
       //  new Dotenv()
     })
   ],
@@ -37,9 +38,9 @@ module.exports = {
         test: /\.js$/,
         exclude: [
             /node_modules/,
-            /spec/
+            // /spec/
           ],
-        loader: "eslint-loader"
+        use: ['babel-loader']
       }
     ]
   }
