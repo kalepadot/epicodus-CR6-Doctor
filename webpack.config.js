@@ -18,9 +18,10 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'Doctor Who',
       template: './src/index.html',
       inject: 'body'
+      //  new Dotenv()
     })
   ],
   module: {
