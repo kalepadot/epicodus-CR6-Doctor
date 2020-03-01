@@ -1,5 +1,5 @@
 {
-  "parser": "babbel-eslint",
+  // "parser": "babbel-eslint",
   "parserOptions": {
       "ecmaVersion": 2018,
       "sourceType": "module"

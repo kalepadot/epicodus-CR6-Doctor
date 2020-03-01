@@ -22,7 +22,6 @@ module.exports = {
       title: 'Doctor Who',
       template: './src/index.html',
       inject: 'head'
-      //  new Dotenv()
     })
   ],
   module: {
@@ -38,9 +37,10 @@ module.exports = {
         test: /\.js$/,
         exclude: [
             /node_modules/,
-            // /spec/
+            /spec/
           ],
-        use: ['babel-loader']
+        // use: ['babel-loader'],
+        loader: "eslint-loader"
       }
     ]
   }
