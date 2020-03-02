@@ -35,3 +35,10 @@ text-align: center;
   background-color: rgb(139,0,0,0.2);
 }
 
+#searchDoctor {
+  color: rgb(250, 241, 229);
+  }
+  
+  #search {
+    color: darkred;
+  }
