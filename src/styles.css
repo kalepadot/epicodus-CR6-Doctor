@@ -7,13 +7,13 @@ body {
 
 p {
   text-align: center;
-  color: bisque;
-  font-size: 65px;
+  color: rgb(250, 228, 201);
+  font-size: 68px;
   font-family: "Anton";
 }
 
 #searchDoctor {
-  color: bisque;
+  color: rgb(250, 228, 201);
   font-size: 40px;
   font-family: "Anton";
   text-align: center;
