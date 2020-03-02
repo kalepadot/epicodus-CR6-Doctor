@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/json" src="index.html.js"></script>
     <script async src="https://cse.google.com/cse.js?cx=014942649037391735392:l6i6nwjebvf"></script>
-    <title>Doctor Who</title>
+    <title>Doctor Search</title>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>jumbotron test</h1>
-      </div>
+      <p>FIND A DOCTOR</p>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <form id="searchDoctor">
             <label for="search">Search by Medical Condition or Doctor Name</label>
             <input name="search" type="text" id="search"/>
-            <button type="submit">Search</button>
+            <button id="btn" type="submit">Search</button>
           </form>
         </div>
-        <div id="output">
+        <!-- <div id="output"> -->
           <!-- output goes here -->
-        </div>
+          <br>
+          <table style="width: 100%" id="output">
+            
+          </table>
+        <!-- </div> -->
         <!-- row ends below -->
       </div> 
       <!-- container ends below -->
