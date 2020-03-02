@@ -43,12 +43,21 @@ _A Doctor searching application that outputs a list of doctors in the Portland a
 
 ## Setup/Installation Requirements
 
-<!-- * _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_ -->
-
+* You must first create your own uniqie API KEY.
+* Visit BetterDoctor:( https://developer.betterdoctor.com/ ) and create an account.
+* BetterDoctor will generate an API key for you, do not push this to github or share with anyone. 
+* Relocate to terminal
+* $ cd ~
+* $ cd desktop
+* Use this link to clone repo:( https://github.com/kalepadot/epicodus-CR6-Doctor.git )
+* In terminal use command $ git clone (paste repo here)
+* Navigate to directory: $ cd epicodus-CR6-Doctor
+* Once in the root directory, $ touch .env  (this will create a file for your API key to live safely)
+* Open directory in text editor VSCode recommended. If VSCode is default use command $ code .
+* Add API key to the .env folder as follows: " API_KEY = "api key goes here".
+* Get up to date with your webpack $ npm install
+* Build the webpack with $ npm run build
+* Now we can start the application, $ npm run start
 
 
 ## Known Bugs
@@ -69,8 +78,9 @@ _For support/ questions/ bugs contact Jeremy Kale Padot at: jeremy@padot.us_
 * CSS
 * JavaScript
 * Terminal
-<!-- * API -->
-<!-- * webpack/jest -->
+* node/npm
+* webpack/jest
+* BetterDoctorAPI
 
 ### License
 
