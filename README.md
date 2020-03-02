@@ -21,23 +21,28 @@ _A Doctor searching application that outputs a list of doctors in the Portland a
 
 ## Specs
 * User should be able to search a medical issue and recieve a list of doctors in the Portland area
-    * Input: sore throat
-    * Output: Here is a doctor that specializes in sore throats in your area: (lists doctor)
+    * Input: Therapy
+    * Output: First name: Donna Last name: Neevel Accepting new patients: true Website: No results available Phone: 5038132000 Specialty Occupational Therapist Address 4855 SW Western Ave Beaverton 97005 OR
 * User should be able to enter a name and recieve a list of Doctors fitting that input
     * Input: Smith  
-    * Output: We've found your Doctor
-* Each listed Doctor should include: first name, last name, phone number, website and whether or not the doctor is accepting new patients. 
-    * Input: Smith 
-    * Output: Dr. John Smith, 555-5555, drsmith.com, Dr. Smith is currently accepting patients, Specialty: Physical-Therapy. 
+    * Output: First name: Dennis Last name: Smith
+* Each listed Doctor should include: first name, last name, phone number, website, address and whether or not the doctor is accepting new patients. 
+    * Input: Donna 
+    * Output: First name: Donna Last name: Neevel Accepting new patients: true Website: No results available Phone: 5038132000 Specialty Occupational Therapist Address 4855 SW Western Ave Beaverton 97005 OR 
 * If the API call results in an error, the application should return a notification that states what the error is.
-    * Input: hello or ''  '' :
-    * Output: No results avaliable, please make a correct input. 
+    * Input: hello
+    * Output: No results are available given current input, try again 
+    * Input : ' '
+    * Output: No results are available, make a correct input.
 * If the query response doesn't meet the search criteria, the application should return a notification that states that no doctors meet the criteria.
     * Input: Padot
-    * Output: No results avaliable given current input, please try again.
+    * Output: No results are available given current input, try again.
 * If an area of the doctors profile is undefined, application will replace undefined with no results.
-    * Input: Dr.Smith
-    * Output: Dr. Smith, 555-5555, website: NO RESULTS, accepting new patients: true, Specialty: NO RESULTS.
+    * Input: Donna
+    * Output: First name: Donna Last name: Neevel Accepting new patients: true Website: NO RESULTS AVALIABLE Phone: 5038132000 Specialty Occupational Therapist Address 4855 SW Western Ave Beaverton 97005 OR
+* If API key error:
+    * Input: Donna
+    * Output: BetterDoctor API error, please try again or request a new key from your developer
 
 
 
