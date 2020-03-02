@@ -9,7 +9,9 @@ $(document).ready(function() {
     event.preventDefault();
     $('#output').empty();
     const name = $('input[name="search"]').val();
+
     (async () => {
+      
       const doctorWho = new DoctorWho();
       if (name === '') {
         $('#output').text("No results are available, make a correct input.");
@@ -20,7 +22,6 @@ $(document).ready(function() {
       }
     })();
     function getElements(response) {
-      console.log(response)
       if(response == false) {
         $('#output').text("BetterDoctor API error, please try again or request a new key from your developer");
       }
