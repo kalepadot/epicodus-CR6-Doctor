@@ -17,7 +17,7 @@
 
 ## Description
 
-__
+_A Doctor searching application that outputs a list of doctors in the Portland area and information about the Doctor and practice. Information includes: Name, Website, Phone, Accepting new patients, and Doctor Specialty. User will recieve error messages if input is not correct. Application will display the top ten matching results based on user input._
 
 ## Specs
 * User should be able to search a medical issue and recieve a list of doctors in the Portland area
@@ -26,15 +26,18 @@ __
 * User should be able to enter a name and recieve a list of Doctors fitting that input
     * Input: Smith  
     * Output: We've found your Doctor
-* Each listed Doctor should include: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients. 
+* Each listed Doctor should include: first name, last name, phone number, website and whether or not the doctor is accepting new patients. 
     * Input: Smith 
-    * Output: Dr. John Smith, 555-5555, drsmith.com, Dr. Smith is currently accepting patients. 
+    * Output: Dr. John Smith, 555-5555, drsmith.com, Dr. Smith is currently accepting patients, Specialty: Physical-Therapy. 
 * If the API call results in an error, the application should return a notification that states what the error is.
-    * 
-    * 
+    * Input: hello or ''  '' :
+    * Output: No results avaliable, please make a correct input. 
 * If the query response doesn't meet the search criteria, the application should return a notification that states that no doctors meet the criteria.
-    * Input: Padot 
-    * Output: We're sorry, there are no doctors with that name in the Portland Area.
+    * Input: Padot
+    * Output: No results avaliable given current input, please try again.
+* If an area of the doctors profile is undefined, application will replace undefined with no results.
+    * Input: Dr.Smith
+    * Output: Dr. Smith, 555-5555, website: NO RESULTS, accepting new patients: true, Specialty: NO RESULTS.
 
 
 

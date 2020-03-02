@@ -40,7 +40,7 @@ $(document).ready(function() {
           $('#output').append(doctorProfile);
         } 
       } else {
-        $('#output').text("No results are available, please make a correct input.");
+        $('#output').text("No results are available given current input, try again.");
       }
     }
   });
